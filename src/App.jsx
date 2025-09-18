@@ -14,7 +14,6 @@ export default function App() {
             Fill in your details step by step and review them in real time.
           </Typography>
         </Box>
-
         <MultiStepForm />
       </Paper>
     </Container>
