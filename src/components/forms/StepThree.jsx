@@ -18,7 +18,12 @@ export default function StepThree() {
           multiline
           rows={4}
           variant="outlined"
-          helperText={<ErrorMessage name="message" />}
+          helperText={
+            <ErrorMessage
+              name="message"
+              render={(msg) => <span style={{ color: "red" }}>{msg}</span>}
+            />
+          }
         />
       </Box>
     </Box>

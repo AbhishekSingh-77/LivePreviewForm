@@ -16,7 +16,12 @@ export default function StepOne() {
           name="name"
           label="Name"
           variant="outlined"
-          helperText={<ErrorMessage name="name" />}
+          helperText={
+            <ErrorMessage
+              name="name"
+              render={(msg) => <span style={{ color: "red" }}>{msg}</span>}
+            />
+          }
         />
       </Box>
 
@@ -28,7 +33,12 @@ export default function StepOne() {
           type="email"
           label="Email"
           variant="outlined"
-          helperText={<ErrorMessage name="email" />}
+          helperText={
+            <ErrorMessage
+              name="email"
+              render={(msg) => <span style={{ color: "red" }}>{msg}</span>}
+            />
+          }
         />
       </Box>
     </Box>

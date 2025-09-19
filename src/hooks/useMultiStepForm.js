@@ -4,11 +4,13 @@ import { useState, useCallback } from "react";
  * useMultiStepForm
  * Simple step controller for multi-step flows.
  *
- * @param {number} totalSteps total number of steps
+ * @param {number} totalSteps total number of steps (required)
  * @param {number} initial starting step index (default 0)
  */
 export default function useMultiStepForm(totalSteps = 1, initial = 0) {
-  const [step, setStep] = useState(Math.max(0, Math.min(initial, totalSteps - 1)));
+  const [step, setStep] = useState(
+    Math.max(0, Math.min(initial, totalSteps - 1))
+  );
 
   const nextStep = useCallback(() => {
     setStep((s) => Math.min(s + 1, totalSteps - 1));

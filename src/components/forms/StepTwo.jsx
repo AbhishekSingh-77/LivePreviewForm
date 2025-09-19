@@ -16,7 +16,12 @@ export default function StepTwo() {
           name="address"
           label="Address"
           variant="outlined"
-          helperText={<ErrorMessage name="address" />}
+          helperText={
+            <ErrorMessage
+              name="address"
+              render={(msg) => <span style={{ color: "red" }}>{msg}</span>}
+            />
+          }
         />
       </Box>
     </Box>

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Divider,
-  Stack,
-} from "@mui/material";
+import { Card, CardContent, Typography, Divider, Stack } from "@mui/material";
 
 export default function PreviewPanel({ values }) {
   return (
