@@ -4,7 +4,7 @@ import MultiStepForm from "./components/forms/MultiStepForm";
 
 export default function App() {
   return (
-    <Container maxWidth="sm" sx={{ py: 2 }}>
+    <Container maxWidth="md" sx={{ py: 2 }}>
       <Paper elevation={3} sx={{ p: 2, borderRadius: 3 }}>
         <Box textAlign="center" mb={1}>
           <Typography variant="h5" component="h1" gutterBottom>
